@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="AddressTypes" syncable="YES">
+        <attribute name="idAddressType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Allergies" syncable="YES">
+        <attribute name="characteristics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idAllergy" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Diseases" syncable="YES">
+        <attribute name="characteristics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idDisease" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EmailTypes" syncable="YES">
+        <attribute name="idEmailType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Fees" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="default" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="generationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idFee" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="iva" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Invoices" syncable="YES">
+        <attribute name="exportedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="generationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idInvoice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="idAdministrator" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Operations" syncable="YES">
+        <attribute name="bodyPart" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="characteristics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idOperation" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PatientAddress" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPatientAddress" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="idAddressType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressTypes" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+    </entity>
+    <entity name="PatientAllergies" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPatientAllergy" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="idAllergy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Allergies" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+    </entity>
+    <entity name="PatientDiseases" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPatientDisease" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="idDisease" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Diseases" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+    </entity>
+    <entity name="PatientEmails" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPatientEmail" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="idEmailType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailTypes" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+    </entity>
+    <entity name="PatientOperations" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPatientOperation" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="idOperation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Operations" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+    </entity>
+    <entity name="Patients" syncable="YES">
+        <attribute name="addresses" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="allergies" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="diseases" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dni" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emails" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idPatient" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="job" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operations" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registerDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="surname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephones" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="PatientTelephones" syncable="YES">
+        <attribute name="idPatientTelephone" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+        <relationship name="idTelephoneType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TelephoneTypes" syncable="YES"/>
+    </entity>
+    <entity name="TelephoneTypes" syncable="YES">
+        <attribute name="idTelephoneType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Users" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idUser" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserTypes" syncable="YES"/>
+    </entity>
+    <entity name="UserTypes" syncable="YES">
+        <attribute name="idUserType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Visits" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idVisit" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reservationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="visitDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="visitHour" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="idFee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Fees" syncable="YES"/>
+        <relationship name="idInvoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoices" syncable="YES"/>
+    </entity>
+    <entity name="WaitingList" syncable="YES">
+        <attribute name="askedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="askedHour" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idWaitingList" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="idPatient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patients" syncable="YES"/>
+        <relationship name="idPhysiotherapist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AddressTypes" positionX="-684" positionY="432" width="128" height="73"/>
+        <element name="Allergies" positionX="-684" positionY="144" width="128" height="88"/>
+        <element name="Diseases" positionX="-684" positionY="-9" width="128" height="88"/>
+        <element name="EmailTypes" positionX="-686" positionY="296" width="128" height="73"/>
+        <element name="Fees" positionX="-198" positionY="-540" width="128" height="148"/>
+        <element name="Invoices" positionX="-198" positionY="-666" width="128" height="103"/>
+        <element name="Operations" positionX="-684" positionY="-153" width="128" height="88"/>
+        <element name="PatientAddress" positionX="-515" positionY="429" width="128" height="103"/>
+        <element name="PatientAllergies" positionX="-515" positionY="143" width="128" height="118"/>
+        <element name="PatientDiseases" positionX="-506" positionY="-10" width="128" height="118"/>
+        <element name="PatientEmails" positionX="-515" positionY="293" width="128" height="103"/>
+        <element name="PatientOperations" positionX="-506" positionY="-153" width="128" height="118"/>
+        <element name="Patients" positionX="-83" positionY="-207" width="128" height="283"/>
+        <element name="PatientTelephones" positionX="-513" positionY="555" width="128" height="103"/>
+        <element name="TelephoneTypes" positionX="-684" positionY="555" width="128" height="73"/>
+        <element name="Users" positionX="-513" positionY="-405" width="164" height="193"/>
+        <element name="UserTypes" positionX="-695" positionY="-351" width="128" height="73"/>
+        <element name="Visits" positionX="205" positionY="-655" width="128" height="178"/>
+        <element name="WaitingList" positionX="-261" positionY="-252" width="128" height="118"/>
+    </elements>
+</model>
