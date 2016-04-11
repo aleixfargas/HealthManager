@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/aleix/XCodeProjects/HealthManager/HealthManager.xcodeproj">
+      location = "self:HealthManager.xcodeproj">
    </FileRef>
 </Workspace>

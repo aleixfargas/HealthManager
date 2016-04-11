@@ -7,63 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040ACCAD1CA2A43C001C3788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCAC1CA2A43C001C3788 /* AppDelegate.swift */; };
-		040ACCAF1CA2A43C001C3788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ACCAE1CA2A43C001C3788 /* ViewController.swift */; };
-		040ACCB11CA2A43C001C3788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCB01CA2A43C001C3788 /* Assets.xcassets */; };
-		040ACCB41CA2A43C001C3788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040ACCB21CA2A43C001C3788 /* Main.storyboard */; };
-		0423E2EB1CB2677400434FA8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0423E2E91CB2677400434FA8 /* Model.xcdatamodeld */; };
-		04746BAC1CB2631F00084539 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04746BAB1CB2631F00084539 /* CoreData.framework */; };
+		04030BC21CBB9E65005DCF5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04030BC11CBB9E65005DCF5B /* AppDelegate.swift */; };
+		04030BC41CBB9E65005DCF5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04030BC31CBB9E65005DCF5B /* ViewController.swift */; };
+		04030BC71CBB9E65005DCF5B /* HealthManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04030BC51CBB9E65005DCF5B /* HealthManager.xcdatamodeld */; };
+		04030BC91CBB9E65005DCF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04030BC81CBB9E65005DCF5B /* Assets.xcassets */; };
+		04030BCC1CBB9E65005DCF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04030BCA1CBB9E65005DCF5B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		040ACCA91CA2A43C001C3788 /* HealthManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		040ACCAC1CA2A43C001C3788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		040ACCAE1CA2A43C001C3788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		040ACCB01CA2A43C001C3788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		040ACCB31CA2A43C001C3788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		040ACCB51CA2A43C001C3788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0423E2EA1CB2677400434FA8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		04746BAB1CB2631F00084539 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		04030BBE1CBB9E65005DCF5B /* HealthManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04030BC11CBB9E65005DCF5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04030BC31CBB9E65005DCF5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04030BC61CBB9E65005DCF5B /* HealthManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthManager.xcdatamodel; sourceTree = "<group>"; };
+		04030BC81CBB9E65005DCF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04030BCB1CBB9E65005DCF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04030BCD1CBB9E65005DCF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		040ACCA61CA2A43C001C3788 /* Frameworks */ = {
+		04030BBB1CBB9E65005DCF5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04746BAC1CB2631F00084539 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040ACCA01CA2A43C001C3788 = {
+		04030BB51CBB9E65005DCF5B = {
 			isa = PBXGroup;
 			children = (
-				04746BAB1CB2631F00084539 /* CoreData.framework */,
-				040ACCAB1CA2A43C001C3788 /* HealthManager */,
-				040ACCAA1CA2A43C001C3788 /* Products */,
+				04030BC01CBB9E65005DCF5B /* HealthManager */,
+				04030BBF1CBB9E65005DCF5B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		040ACCAA1CA2A43C001C3788 /* Products */ = {
+		04030BBF1CBB9E65005DCF5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				040ACCA91CA2A43C001C3788 /* HealthManager.app */,
+				04030BBE1CBB9E65005DCF5B /* HealthManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		040ACCAB1CA2A43C001C3788 /* HealthManager */ = {
+		04030BC01CBB9E65005DCF5B /* HealthManager */ = {
 			isa = PBXGroup;
 			children = (
-				040ACCAC1CA2A43C001C3788 /* AppDelegate.swift */,
-				040ACCAE1CA2A43C001C3788 /* ViewController.swift */,
-				0423E2E91CB2677400434FA8 /* Model.xcdatamodeld */,
-				040ACCB01CA2A43C001C3788 /* Assets.xcassets */,
-				040ACCB21CA2A43C001C3788 /* Main.storyboard */,
-				040ACCB51CA2A43C001C3788 /* Info.plist */,
+				04030BC11CBB9E65005DCF5B /* AppDelegate.swift */,
+				04030BC31CBB9E65005DCF5B /* ViewController.swift */,
+				04030BC81CBB9E65005DCF5B /* Assets.xcassets */,
+				04030BCA1CBB9E65005DCF5B /* Main.storyboard */,
+				04030BCD1CBB9E65005DCF5B /* Info.plist */,
+				04030BC51CBB9E65005DCF5B /* HealthManager.xcdatamodeld */,
 			);
 			path = HealthManager;
 			sourceTree = "<group>";
@@ -71,13 +67,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		040ACCA81CA2A43C001C3788 /* HealthManager */ = {
+		04030BBD1CBB9E65005DCF5B /* HealthManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 040ACCB81CA2A43C001C3788 /* Build configuration list for PBXNativeTarget "HealthManager" */;
+			buildConfigurationList = 04030BD01CBB9E65005DCF5B /* Build configuration list for PBXNativeTarget "HealthManager" */;
 			buildPhases = (
-				040ACCA51CA2A43C001C3788 /* Sources */,
-				040ACCA61CA2A43C001C3788 /* Frameworks */,
-				040ACCA71CA2A43C001C3788 /* Resources */,
+				04030BBA1CBB9E65005DCF5B /* Sources */,
+				04030BBB1CBB9E65005DCF5B /* Frameworks */,
+				04030BBC1CBB9E65005DCF5B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -85,25 +81,25 @@
 			);
 			name = HealthManager;
 			productName = HealthManager;
-			productReference = 040ACCA91CA2A43C001C3788 /* HealthManager.app */;
+			productReference = 04030BBE1CBB9E65005DCF5B /* HealthManager.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		040ACCA11CA2A43C001C3788 /* Project object */ = {
+		04030BB61CBB9E65005DCF5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Aleix Fargas";
 				TargetAttributes = {
-					040ACCA81CA2A43C001C3788 = {
+					04030BBD1CBB9E65005DCF5B = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 040ACCA41CA2A43C001C3788 /* Build configuration list for PBXProject "HealthManager" */;
+			buildConfigurationList = 04030BB91CBB9E65005DCF5B /* Build configuration list for PBXProject "HealthManager" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,46 +107,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 040ACCA01CA2A43C001C3788;
-			productRefGroup = 040ACCAA1CA2A43C001C3788 /* Products */;
+			mainGroup = 04030BB51CBB9E65005DCF5B;
+			productRefGroup = 04030BBF1CBB9E65005DCF5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				040ACCA81CA2A43C001C3788 /* HealthManager */,
+				04030BBD1CBB9E65005DCF5B /* HealthManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		040ACCA71CA2A43C001C3788 /* Resources */ = {
+		04030BBC1CBB9E65005DCF5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040ACCB11CA2A43C001C3788 /* Assets.xcassets in Resources */,
-				040ACCB41CA2A43C001C3788 /* Main.storyboard in Resources */,
+				04030BC91CBB9E65005DCF5B /* Assets.xcassets in Resources */,
+				04030BCC1CBB9E65005DCF5B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		040ACCA51CA2A43C001C3788 /* Sources */ = {
+		04030BBA1CBB9E65005DCF5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040ACCAF1CA2A43C001C3788 /* ViewController.swift in Sources */,
-				040ACCAD1CA2A43C001C3788 /* AppDelegate.swift in Sources */,
-				0423E2EB1CB2677400434FA8 /* Model.xcdatamodeld in Sources */,
+				04030BC41CBB9E65005DCF5B /* ViewController.swift in Sources */,
+				04030BC21CBB9E65005DCF5B /* AppDelegate.swift in Sources */,
+				04030BC71CBB9E65005DCF5B /* HealthManager.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		040ACCB21CA2A43C001C3788 /* Main.storyboard */ = {
+		04030BCA1CBB9E65005DCF5B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				040ACCB31CA2A43C001C3788 /* Base */,
+				04030BCB1CBB9E65005DCF5B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -158,7 +154,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		040ACCB61CA2A43C001C3788 /* Debug */ = {
+		04030BCE1CBB9E65005DCF5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -202,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		040ACCB71CA2A43C001C3788 /* Release */ = {
+		04030BCF1CBB9E65005DCF5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +234,7 @@
 			};
 			name = Release;
 		};
-		040ACCB91CA2A43C001C3788 /* Debug */ = {
+		04030BD11CBB9E65005DCF5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -250,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		040ACCBA1CA2A43C001C3788 /* Release */ = {
+		04030BD21CBB9E65005DCF5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -265,20 +261,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		040ACCA41CA2A43C001C3788 /* Build configuration list for PBXProject "HealthManager" */ = {
+		04030BB91CBB9E65005DCF5B /* Build configuration list for PBXProject "HealthManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				040ACCB61CA2A43C001C3788 /* Debug */,
-				040ACCB71CA2A43C001C3788 /* Release */,
+				04030BCE1CBB9E65005DCF5B /* Debug */,
+				04030BCF1CBB9E65005DCF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		040ACCB81CA2A43C001C3788 /* Build configuration list for PBXNativeTarget "HealthManager" */ = {
+		04030BD01CBB9E65005DCF5B /* Build configuration list for PBXNativeTarget "HealthManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				040ACCB91CA2A43C001C3788 /* Debug */,
-				040ACCBA1CA2A43C001C3788 /* Release */,
+				04030BD11CBB9E65005DCF5B /* Debug */,
+				04030BD21CBB9E65005DCF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -286,17 +282,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0423E2E91CB2677400434FA8 /* Model.xcdatamodeld */ = {
+		04030BC51CBB9E65005DCF5B /* HealthManager.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0423E2EA1CB2677400434FA8 /* Model.xcdatamodel */,
+				04030BC61CBB9E65005DCF5B /* HealthManager.xcdatamodel */,
 			);
-			currentVersion = 0423E2EA1CB2677400434FA8 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 04030BC61CBB9E65005DCF5B /* HealthManager.xcdatamodel */;
+			path = HealthManager.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 040ACCA11CA2A43C001C3788 /* Project object */;
+	rootObject = 04030BB61CBB9E65005DCF5B /* Project object */;
 }

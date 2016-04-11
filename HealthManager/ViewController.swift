@@ -15,25 +15,25 @@ class ViewController: NSViewController {
     @IBOutlet weak var UserPwd: NSSecureTextFieldCell!
     @IBOutlet weak var UserType: NSComboBoxCell!
     @IBOutlet weak var SignIn: NSButtonCell!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         //Background color Layout
         self.view.wantsLayer = true
     }
-
+    
     override func viewWillAppear() {
         //set the Background layout color
         LoginView.layer?.backgroundColor = NSColor.whiteColor().CGColor
         //LoginView.layer?.setNeedsDisplay()
     }
-
+    
     override var representedObject: AnyObject? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
     
