@@ -16,12 +16,13 @@ class ViewController: NSViewController {
     @IBOutlet weak var UserType: NSComboBoxCell!
     @IBOutlet weak var SignIn: NSButtonCell!
     
+    internal var NameValue: String!
+    internal var PwdValue: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        //Background color Layout
+        // Set background Layout
         self.view.wantsLayer = true
     }
     
@@ -38,7 +39,17 @@ class ViewController: NSViewController {
     }
     
     @IBAction func onClickSignIn(sender: NSButtonCell) {
-        LoginView.removeFromSuperview()
+        NameValue = self.UserName.stringValue
+        PwdValue = self.UserPwd.stringValue
+        
+        if self.checkLogin(NameValue, userPassword: PwdValue) {
+            LoginView.removeFromSuperview()
+        }
+    }
+    
+    func checkLogin(userName: String, userPassword: String) -> Bool{
+
+        return true
     }
 }
 

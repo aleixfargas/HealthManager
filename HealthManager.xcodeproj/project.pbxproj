@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		04030BC21CBB9E65005DCF5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04030BC11CBB9E65005DCF5B /* AppDelegate.swift */; };
 		04030BC41CBB9E65005DCF5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04030BC31CBB9E65005DCF5B /* ViewController.swift */; };
-		04030BC71CBB9E65005DCF5B /* HealthManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04030BC51CBB9E65005DCF5B /* HealthManager.xcdatamodeld */; };
 		04030BC91CBB9E65005DCF5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04030BC81CBB9E65005DCF5B /* Assets.xcassets */; };
 		04030BCC1CBB9E65005DCF5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04030BCA1CBB9E65005DCF5B /* Main.storyboard */; };
+		04975C951CCE117E003B5372 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 04975C941CCE117E003B5372 /* Model.xcdatamodel */; };
+		04975C971CD0BEA7003B5372 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04975C961CD0BEA7003B5372 /* DataController.swift */; };
+		04975C991CD0C98C003B5372 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04975C981CD0C98C003B5372 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04030BBE1CBB9E65005DCF5B /* HealthManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04030BC11CBB9E65005DCF5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04030BC31CBB9E65005DCF5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04030BC61CBB9E65005DCF5B /* HealthManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthManager.xcdatamodel; sourceTree = "<group>"; };
 		04030BC81CBB9E65005DCF5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04030BCB1CBB9E65005DCF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04030BCD1CBB9E65005DCF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04975C941CCE117E003B5372 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = Model.xcdatamodel; path = HealthManager.xcdatamodeld/Model.xcdatamodel; sourceTree = "<group>"; };
+		04975C961CD0BEA7003B5372 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		04975C981CD0C98C003B5372 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				04030BC81CBB9E65005DCF5B /* Assets.xcassets */,
 				04030BCA1CBB9E65005DCF5B /* Main.storyboard */,
 				04030BCD1CBB9E65005DCF5B /* Info.plist */,
-				04030BC51CBB9E65005DCF5B /* HealthManager.xcdatamodeld */,
+				04975C941CCE117E003B5372 /* Model.xcdatamodel */,
+				04975C961CD0BEA7003B5372 /* DataController.swift */,
+				04975C981CD0C98C003B5372 /* Users.swift */,
 			);
 			path = HealthManager;
 			sourceTree = "<group>";
@@ -134,9 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04975C991CD0C98C003B5372 /* Users.swift in Sources */,
 				04030BC41CBB9E65005DCF5B /* ViewController.swift in Sources */,
+				04975C971CD0BEA7003B5372 /* DataController.swift in Sources */,
 				04030BC21CBB9E65005DCF5B /* AppDelegate.swift in Sources */,
-				04030BC71CBB9E65005DCF5B /* HealthManager.xcdatamodeld in Sources */,
+				04975C951CCE117E003B5372 /* Model.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,19 +288,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		04030BC51CBB9E65005DCF5B /* HealthManager.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				04030BC61CBB9E65005DCF5B /* HealthManager.xcdatamodel */,
-			);
-			currentVersion = 04030BC61CBB9E65005DCF5B /* HealthManager.xcdatamodel */;
-			path = HealthManager.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 04030BB61CBB9E65005DCF5B /* Project object */;
 }
