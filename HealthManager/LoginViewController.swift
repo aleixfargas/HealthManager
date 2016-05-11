@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  HealthManager
 //
 //  Created by Aleix on 23/3/16.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class LoginViewController: NSViewController {
     
     @IBOutlet var LoginView: NSView!
     @IBOutlet weak var UserName: NSTextFieldCell!
